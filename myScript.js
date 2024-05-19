@@ -22,7 +22,7 @@ class Knight{
 
 function check(a, i, j){
   switch (a){
-    case 'K':
+    case 'Kn':
       K1 = new Knight;
       K1.lightSquares(i, j);
       break;
