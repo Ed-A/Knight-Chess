@@ -15,7 +15,7 @@ class Knight{
     if(i+2>=0 && i+2<=4 && j-1 <=4 && j-1 >=0){document.getElementById((i+2) + "_" + (j-1)).innerHTML = "O";}
     if(i+1>=0 && i+1<=4 && j-2 <=4 && j-2 >=0){document.getElementById((i+1) + "_" + (j-2)).innerHTML = "O";}
     if(i-2>=0 && i-2<=4 && j+1 <=4 && j+1 >=0){document.getElementById((i-2) + "_" + (j+1)).innerHTML = "O";}
-    piece = "K";
+    piece = "Kn";
     index = i + "_" + j;
   }
 }
