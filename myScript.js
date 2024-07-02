@@ -42,7 +42,7 @@ function check(a, i, j){
     remove();
     // CHANGES PIECE POSITION
     a.innerHTML = "<img src="+piece+" alt="+piecealt+">";
-    document.getElementById(index).innerHTML = "<img src='clear.png' alt=''>";
+    document.getElementById(index).innerHTML = "";
     document.getElementById(index).style.backgroundColor = "transparent";
   }
 }
