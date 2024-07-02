@@ -1,10 +1,18 @@
 table, td{
   border: 2px solid black;
   border-collapse: collapse;
+  position: relative;
+  z-index: 99;
+}
+
+img{
+  position: relative;
+  z-index: -1;
 }
 
 td{
-  height: 50px;
-  width: 50px;
+  height: 57.6px;
+  width: 57.6px;
   text-align: center;
+  background-color: rgba(0,0,0,0);
 }

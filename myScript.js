@@ -2,6 +2,11 @@ let piece = "";
 let piecealt = "";
 let index = "";
 
+window.addEventListener("click", (event) =>{
+  let id=event.target.id;
+  check(event.target, parseInt(id[0]), parseInt(id[2]));
+});
+
 class Knight{
   // CLASS OF THE PIECE WITH METHOD THAT CALCULATES POSSIBLE MOVES
   lightSquares(i,j) {
@@ -36,10 +41,8 @@ function check(a, i, j){
   }else{
     remove();
     // CHANGES PIECE POSITION
-    a.children[0].src = piece;
-    a.children[0].alt = piecealt;
-    document.getElementById(index).children[0].src = "clear.png";
-    document.getElementById(index).children[0].alt = "";
+    a.innerHTML = "<img src="+piece+" alt="+piecealt+">";
+    document.getElementById(index).innerHTML = "<img src='clear.png' alt=''>";
     document.getElementById(index).style.backgroundColor = "transparent";
   }
 }
