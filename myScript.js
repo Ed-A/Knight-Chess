@@ -28,22 +28,21 @@ class Knight{
 function check(a, i, j){
   // FUNCTION TO CHECK CLICKS AND RESPOND ACCORDINGLY
   if(a.style.backgroundColor != "orange"){
-    switch (a.children[0].alt){
-      case 'whiteknight':
+    try{
+      if(a.children[0].alt == 'whiteknight'){
         K1 = new Knight;
         K1.lightSquares(i, j);
-        break;
-      case '':
-        remove();
-        piece = "";
-        index = "";
+      }
+    }catch{
+      remove();
+      piece = "";
+      index = "";
     }
   }else{
     remove();
     // CHANGES PIECE POSITION
     a.innerHTML = "<img src="+piece+" alt="+piecealt+">";
     document.getElementById(index).innerHTML = "";
-    document.getElementById(index).style.backgroundColor = "transparent";
   }
 }
 
@@ -57,4 +56,5 @@ function remove(){
             elements[count].style.backgroundColor = "transparent";
         }
     }
+    document.getElementById(index).style.backgroundColor = "transparent";
 }
