@@ -19,6 +19,7 @@ This is a simplified chess game featuring a single knight on a 5x5 board. The pl
 - `index.html`: The main HTML structure for the chessboard.
 - `style.css`: Contains the styling for the chessboard and the knight.
 - `myScript.js`: Handles the knight's movement logic and user interactions.
+- `whiteknight.png`: PNG format image for the knight piece.
 
 ## How it Works
 - When the knight is clicked, the board highlights all possible knight moves (L-shaped moves typical in chess).
